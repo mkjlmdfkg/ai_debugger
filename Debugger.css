@@ -1,0 +1,65 @@
+body{background:black;height:100%;width:100%;}
+p{position:absolute;margin:0 0 0 0;padding:0 0 0 0; z-index:15;}
+
+.hexagon {
+  position: absolute;
+  width: 30px; 
+  height: 20px;
+  background-color: #64C7CC;
+  margin: 6px 0;
+  border-left:1px solid white;
+  border-right:1px solid white;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 6px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 6px solid #64C7CC;
+}
+
+
+/*************************************************
+*                  Tile Types:                   *
+*************************************************/
+
+.inaccessible{background:crimson; z-index:1;}
+.inaccessible:before{border-bottom: 6px solid crimson;}
+.inaccessible:after{border-top: 6px solid crimson;}
+
+.goal{background:chartreuse;}
+.goal:before{border-bottom: 6px solid chartreuse;}
+.goal:after{border-top: 6px solid chartreuse;}
+
+.personnage{background:yellow;}
+.personnage:before{border-bottom: 6px solid yellow;}
+.personnage:after{border-top: 6px solid yellow;}
+
+.coutFaible{background:lightgreen;}
+.coutFaible:before{border-bottom: 6px solid lightgreen;}
+.coutFaible:after{border-top: 6px solid lightgreen;}
+
+.coutMoyen{background:gainsboro;}
+.coutMoyen:before{border-bottom: 6px solid gainsboro;}
+.coutMoyen:after{border-top: 6px solid gainsboro;}
+
+.coutEleve{background:lightpink;}
+.coutEleve:before{border-bottom: 6px solid lightpink;}
+.coutEleve:after{border-top: 6px solid lightpink;}
+
+.coutTresEleve{background:lightcoral;}
+.coutTresEleve:before{border-bottom: 6px solid lightcoral;}
+.coutTresEleve:after{border-top: 6px solid lightcoral;}
